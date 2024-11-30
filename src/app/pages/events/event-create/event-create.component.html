@@ -1,0 +1,17 @@
+<div class="event-create">
+  <h1>Créer un événement</h1>
+  <form (submit)="createEvent()">
+    <input type="text" [(ngModel)]="title" placeholder="Titre"name="title" required />
+    <textarea [(ngModel)]="description" placeholder="Description" name="description" required></textarea>
+    <input type="date" [(ngModel)]="date" name="date" required />
+    <input type="text" [(ngModel)]="location" placeholder="Lieu" name="location" required />
+    <div>
+      <label>
+        <input type="checkbox" [(ngModel)]="isPublic" name="isPublic" />
+        Rendre cet événement public
+      </label>
+    </div>
+    
+    <button type="submit">Créer</button>
+  </form>
+</div>

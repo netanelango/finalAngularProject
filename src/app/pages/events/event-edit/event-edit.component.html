@@ -1,0 +1,8 @@
+<h1>Modifier l'événement</h1>
+<form (submit)="saveChanges()">
+  <input type="text" [(ngModel)]="title" placeholder="Titre" name="title" required />
+  <textarea [(ngModel)]="description" placeholder="Description" name="descrition" required></textarea>
+  <input type="date" [(ngModel)]="date" name="date" required />
+  <input type="text" [(ngModel)]="location" placeholder="Lieu" name="text" required />
+  <button type="submit">Sauvegarder</button>
+</form>

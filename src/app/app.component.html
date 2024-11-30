@@ -1,0 +1,9 @@
+<nav>
+  <a routerLink="/events">Événements</a>
+  <a routerLink="/dashboard" *ngIf="isAuthenticated">Mon Tableau de bord</a>
+  <button (click)="logout()" *ngIf="isAuthenticated">Se déconnecter</button>
+  <a routerLink="/login" *ngIf="!isAuthenticated">Connexion</a>
+  <a routerLink="/register" *ngIf="!isAuthenticated">Créer un compte</a>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+<div class="login">
+  <h1>Connexion</h1>
+  <form (submit)="login()">
+    <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required />
+    <input type="password" [(ngModel)]="password" name="password" placeholder="Mot de passe" required />
+    <button type="submit" [disabled]="loading">
+      {{ loading ? 'Connexion...' : 'Se connecter' }}
+    </button>
+  </form>
+  <p>
+    Pas encore inscrit ?
+    <button (click)="goToRegister()">S'inscrire</button>
+  </p>
+</div>

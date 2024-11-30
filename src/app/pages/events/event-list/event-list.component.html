@@ -1,0 +1,8 @@
+<div class="event-list">
+  <h1>Liste des événements</h1>
+  <div *ngFor="let event of events$ | async" class="event-item">
+    <h2>{{ event.title }}</h2>
+    <p>{{ event.description }}</p>
+    <button (click)="navigateToDetails(event.id)">Voir les détails</button>
+  </div>
+</div>

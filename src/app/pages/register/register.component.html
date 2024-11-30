@@ -1,0 +1,30 @@
+<div class="register">
+  <h1>Inscription</h1>
+  <form (submit)="register()">
+    <input
+      type="email"
+      [(ngModel)]="email"
+      name="email"
+      placeholder="Email"
+      required
+    />
+    <input
+      type="password"
+      [(ngModel)]="password"
+      name="password"
+      placeholder="Mot de passe"
+      required
+    />
+    <input
+      type="password"
+      [(ngModel)]="confirmPassword"
+      name="confirmPassword"
+      placeholder="Confirmez le mot de passe"
+      required
+    />
+    <button type="submit" [disabled]="loading">
+      {{ loading ? 'Inscription...' : "S'inscrire" }}
+    </button>
+  </form>
+  <p class="error-message" *ngIf="error">{{ error }}</p>
+</div>

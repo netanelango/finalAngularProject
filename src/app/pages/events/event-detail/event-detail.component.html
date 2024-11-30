@@ -1,0 +1,17 @@
+<div class="event-detail">
+  <ng-container *ngIf="event$ | async as event; else loading">
+    <h1>{{ event.title }}</h1>
+    <p>{{ event.description }}</p>
+    <p>Date : {{ event.date | date }}</p>
+    <p>Lieu : {{ event.location }}</p>
+  </ng-container>
+  <ng-template #loading>
+    <p>Chargement des détails de l'événement...</p>
+  </ng-template>
+  <div>
+    <form action="">
+    <input type="text", placeholder="Laisser un commentaire ...">
+    <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</div>
