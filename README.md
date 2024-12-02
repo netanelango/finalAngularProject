@@ -2,26 +2,56 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# EventManager
 
-## Code scaffolding
+EventManager est une application dédiée à la gestion d’événements. Elle permet aux utilisateurs de créer, consulter et gérer divers types d’événements (concerts, conférences, etc.). Cette version est développée en Angular pour une utilisation web.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Table des Matières
 
-## Build
+- Aperçu
+- Fonctionnalités
+- Technologies Utilisées
+- Installation
+- Utilisation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Aperçu
 
-## Running unit tests
+EventManager vise à simplifier la gestion d’événements tout en offrant une plateforme intuitive pour les organisateurs et les participants. Que vous organisiez un concert ou une conférence, cette application vous aide à gérer efficacement les détails de l’événement.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Fonctionnalités
 
-## Running end-to-end tests
+- Création et gestion d'événements : Créez et modifiez des événements en précisant des détails tels que le titre, la date, l'heure, le lieu et une description.
+- Consultation d’événements : Accédez à la liste des événements disponibles et explorez leurs détails.
+- Version web responsive adaptée aux différents appareils.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Technologies Utilisées
 
-## Further help
+- Frontend Web : Angular
+- Backend : API REST
+- Base de données : Firebase
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Installation
+
+1. Clonez le dépôt :
+
+   git clone https://github.com/netanelango/FinalProjetWeb.git  
+   cd FinalProjetWeb  
+
+2. Installez les dépendances :
+
+   npm install  
+
+3. Lancez le serveur de développement :
+
+   ng serve  
+
+4. Accédez à l'application dans votre navigateur à l'adresse suivante : http://localhost:4200/
+
+## Utilisation
+
+1. Inscrivez-vous ou connectez-vous.
+2. Créez un événement en remplissant les informations nécessaires.
+3. Consultez les événements disponibles sur la plateforme.
+
+
